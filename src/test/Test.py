@@ -153,7 +153,7 @@ print('=================Set集合====================')
 student = {'Tom', 'Jim', 'Mary', 'Tom'}
 print(student)#输出集合，重复的元素被自动去掉
 
-print('125')
+print('123')
 
 
 
