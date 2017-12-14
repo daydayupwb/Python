@@ -149,11 +149,6 @@ tup1 = ()
 tup2 = (20,)#不加逗号输出一个元素：20
 print(tup1,tup2)
 
-print('=================Set集合====================')
-student = {'Tom', 'Jim', 'Mary', 'Tom'}
-print(student)#输出集合，重复的元素被自动去掉
-
-print('123')
 
 
 
