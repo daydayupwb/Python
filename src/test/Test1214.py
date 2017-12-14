@@ -35,6 +35,7 @@ cpy.clear()#清空字典
 print(cpy)
 print(tinydict.get('name'))#根据key获取值
 
+print('==================Python3 解释器==================')
 
 
 
