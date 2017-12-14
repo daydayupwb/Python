@@ -20,3 +20,43 @@ print(a | b)#a和b的并集
 print(a & b)#a和b的交集
 print(a ^ b)#a和b中不同时存在的元素
 
+print('=================Dictionary==================')
+dict = {}#空字典
+dict['one'] = '菜鸟'
+dict[2] = '菜鸟2'
+print(dict['one'])
+print(dict[2])
+tinydict = {'name':'runoob', 'code':1, 'site':'www.123.com'}
+print(tinydict.keys());#输出所有key值
+print(tinydict.values())#输出所有value值
+cpy = tinydict.copy()#复制字典
+print(cpy)
+cpy.clear()#清空字典
+print(cpy)
+print(tinydict.get('name'))#根据key获取值
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
