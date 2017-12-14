@@ -36,6 +36,10 @@ print(cpy)
 print(tinydict.get('name'))#根据key获取值
 
 print('==================Python3 解释器==================')
+'''
+注释1
+注释2
+'''
 
 
 
