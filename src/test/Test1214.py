@@ -3,6 +3,8 @@ Created on 2017年12月14日
 
 @author: Administrator
 '''
+from _ast import If
+from symbol import if_stmt
 print('=================Set集合====================')
 student = {'Tom', 'Jim', 'Mary', 'Tom'}
 print(student)#输出集合，重复的元素被自动去掉
@@ -41,9 +43,31 @@ print('==================Python3 解释器==================')
 注释2
 '''
 
+#注释2
+"""
+我的注释
+我的注释
+"""
+print('==================Python3 逻辑运算符==================')
 
+x = False
+print(not x)
 
+list = [1,2,3,4,5]
+listele = 10
+if(listele in list):
+    print('在包含之中。。。')
+else:
+    print('不在包含之中。。。')
 
+copylist = list
+#is 用于判断两个变量引用对象是否为同一个， == 用于判断引用变量的值是否相等。
+print(copylist == list)
+print(copylist is list[:])
+
+intavalue = 3.0
+print(int(intavalue))#转换成整数
+print(2**4)
 
 
 
