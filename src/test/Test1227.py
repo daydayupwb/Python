@@ -23,3 +23,21 @@ print(list[2])
 del list[3]
 print('删除第三个元素: ',list)
 
+dict1 = {'abc':123,'htc':456}
+print(dict1['abc'])
+
+dict1['abc'] = 888#更新字典
+dict1['ttt'] = 777#添加字典值
+
+print(dict1)
+
+del dict1['abc']#删除字典值
+print(dict1)
+
+dict1.clear()#清空字典值
+print(dict1)
+
+print('===============Python3 编程第一步===============')
+
+
+
