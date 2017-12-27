@@ -5,6 +5,7 @@ Created on 2017年12月14日
 '''
 from _ast import If
 from symbol import if_stmt
+from math import ceil, floor
 print('=================Set集合====================')
 student = {'Tom', 'Jim', 'Mary', 'Tom'}
 print(student)#输出集合，重复的元素被自动去掉
@@ -69,12 +70,36 @@ intavalue = 3.0
 print(int(intavalue))#转换成整数
 print(2**4)
 
+print('=================Python3 成员运算符====================')
+a = 10
+b = 8
+alllist = [1,2,3,10,20]
+if(a in alllist):
+    print('a 在alllist 中。。。')
+else:
+    print('a 不在alllist 中。。。')
+if(b not in alllist):
+    print('b 不在alllist 中。。。')
+else:
+    print('b 在alllist 中。。。')
 
+print('================Python3 身份运算符=====================')
+s1 = 20
+s2 = 20
+print(s1 is s2)
+print(s1 is not s2)
 
+print('================Python3 数字==========================')
+var1 = 1
+var2 = 10
+print(var1)
+#del var1
+print(var1)
 
-
-
-
+print('================数学函数=======================')
+print(abs(-100))
+print(ceil(4.1))
+print(floor(5.9))
 
 
 
