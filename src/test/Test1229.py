@@ -37,12 +37,48 @@ for site in sites:
 else:
     print("没有循环数据")
 print('完成循环！')
+#遍历数字序列
+for i in range(5):
+    print(i)# 0 1 2 3 4 
+print('========for========')
+for j in range(5, 9, 2):
+    print(j)
+#创建list
+list = list(range(5))
+print(list)
 
+pass#空语句
 
+print('==============Python3 迭代器与生成器============')
+import sys #引入sys模块
+ilist = [1,2,3,4]
+it = iter(ilist)
+print(next(it))
 
+iter22 = [3,4,5,6]
+print(next(iter(iter22)))
 
+for x in iter(iter22):
+    print(x,end=',')
 
+while True:
+    try:
+        print(next(it))
+    except StopIteration:
+        sys.exit()
 
+def fibonacci(n):#生成器函数
+    a,b,counter = 0,1,0
+    while True:
+        if(counter > n):
+            return
+        yield a#使用yield的函数被称为生成器
+        a,b = b,a+b
+        counter += 1
+f = fibonacci(10)
 
-    
-
+while True:
+    try:
+        print(next(f),end=" ")
+    except StopIteration:
+        sys.exit()
