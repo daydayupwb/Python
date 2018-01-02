@@ -213,13 +213,31 @@ test.speak()
 
 #重写
 class Parent:
+    __count = 0 #私有属性
     def myMethod(self):
         print('调用父类的方法')
+    def __speak__(self):
+        print('我说你是谁啊？ 废话那么多。')
 class Child(Parent):
     def myMethod(self):
         print('调用子类的方法')
+    def __div__(self):
+        print('123')
 c = Child()
 c.myMethod()
+p = Parent()
+#print(p.__count)#两个下划线开头为私有属性，只能在内里面调用。
+#p.__speak__()#两个下划线开头为私有方法，只能在类里面调用。
+c.__div__()
+
+
+
+
+
+
+
+
+
 
 
 
