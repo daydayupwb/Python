@@ -5,8 +5,12 @@ Created on 2018年1月3日
 '''
 
 print('==============标准库概览==============')
-import os, glob, shutil, sys,re,math,random
+from datetime import date
+import doctest
+import os, glob, shutil, sys, re, math, random
+import re
 from urllib.request import urlopen
+
 print(os.getcwd())#获取当前工作目录
 #os.system('cmd')#调用系统命令
 print(glob.glob('*.py'))#搜索所有py文件
@@ -30,7 +34,6 @@ print(random.choice(['a','b','c','d']))
 print(random.random())
 
 #日期时间
-from datetime import date
 print(date.today())
 
 #数据压缩。。。。
@@ -38,7 +41,6 @@ print(date.today())
 def averge(values):
     return sum(values) / len(values)
 
-import doctest
 print(doctest.testmod())# 自动验证嵌入测试
 
 #单元测试。。。
@@ -48,6 +50,21 @@ print(doctest.testmod())# 自动验证嵌入测试
 #         self.assertEqual(averge([20,30,56]),40)
 # 
 # unittest.main()
+
+print("==============正则表达式================")
+result = re.match('123', '7123456')#是否在起始位置，是返回，否返回None
+#print(result.span())
+print(result)
+print(re.search('562', '248562'))#不管是否在起始位置
+
+#替换,默认为0 替换所有。
+print(re.sub(r'\D', 'h', "1w2f3c4d5e6g", 0))
+
+
+
+
+
+
 
 
 
