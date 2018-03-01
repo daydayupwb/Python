@@ -12,7 +12,7 @@ print(student)#输出集合，重复的元素被自动去掉
 
 #成员测试
 if('Jim' in student):
-    print('Jim 在集合中。。。')
+    print('Jim 在集合中。。。。。')
 
 #set集合运算
 a = set('abracadabra')# abcdr
