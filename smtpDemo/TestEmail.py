@@ -22,7 +22,7 @@ try:
     smtpobj.sendmail(sender, receivers, message.as_string())
     print('邮件发送成功')
 except smtplib.SMTPException:
-    print("Error: 无法发送邮件!")
+    print("Error: 无法发送邮件!！！")
 
 
 
